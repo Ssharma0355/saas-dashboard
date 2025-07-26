@@ -1,0 +1,33 @@
+{
+  "stats": [
+    { "title": "Customers", "value": "3,781", "change": "+11.01%" },
+    { "title": "Orders", "value": "1,219", "change": "-0.03%" },
+    { "title": "Revenue", "value": "$695", "change": "+15.03%" },
+    { "title": "Growth", "value": "30.1%", "change": "+6.08%" }
+  ],
+  "orders": [
+    {
+      "id": "#CM9801",
+      "user": "Natali Craig",
+      "avatar": "https://i.pravatar.cc/30?img=1",
+      "project": "Landing Page",
+      "address": "Meadow Lane Oakland",
+      "date": "Just now",
+      "status": "In Progress"
+    },
+    {
+      "id": "#CM9802",
+      "user": "Kate Morrison",
+      "avatar": "https://i.pravatar.cc/30?img=2",
+      "project": "CRM Admin pages",
+      "address": "Larry San Francisco",
+      "date": "1 minute ago",
+      "status": "Complete"
+    }
+  ],
+  "revenueChart": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "current": [10000, 15000, 12000, 18000, 20000, 22000],
+    "previous": [12000, 14000, 16000, 17000, 19000, 21000]
+  }
+}
