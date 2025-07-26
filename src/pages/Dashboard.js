@@ -1,13 +1,19 @@
-import Card from "../components/Card";
+import data from "../data/data.json";
+import DashboardLayout from "../layouts/DashboardLayout";
+import StatCard from "../components/Cards/StatCard";
+// import RevenueChart from ../components/Charts/...
 
-const Dashboard = () => {
+const Dashboard = ({ theme, setTheme }) => {
   return (
-    <div className="p-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-      <Card title="Customers" value="3,781" growth="+1.10%" />
-      <Card title="Orders" value="1,219" growth="-0.03%" />
-      <Card title="Revenue" value="$695" growth="+15.03%" />
-      <Card title="Growth" value="30.1%" growth="+6.08%" />
-    </div>
+    <DashboardLayout theme={theme} setTheme={setTheme}>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-6">
+        {data.stats.map((stat, index) => (
+          <StatCard key={index} {...stat} />
+        ))}
+      </div>
+
+      {/* Revenue Chart & Bar Chart can also use data.revenueChart */}
+    </DashboardLayout>
   );
 };
 
